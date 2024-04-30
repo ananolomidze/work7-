@@ -1,0 +1,71 @@
+p{
+    position: absolute;
+    padding-top: 120px;
+    font-size: 100px;
+    text-align: center;
+    margin-left: 400px;
+    color:darkblue;
+}
+main{
+    background-image: url(../images/pic5.jpg);
+    height: 700px;
+    background-repeat: no-repeat;
+    background-size:inherit;
+}
+
+.pic1{
+    height: 70px;
+    width: 70px;
+}
+.pic2{
+    height: 70px;
+    width: 70px;
+}
+.pic1{
+   margin-top:50px ;
+    animation-direction: alternate;
+    animation: mymove 6s linear 1s;
+    animation-fill-mode: forwards;
+    position: absolute;
+    animation-iteration-count: infinite;
+}
+
+@keyframes mymove {
+    from{right: -70px;}
+    to{right:1400px;}
+}
+.pic2{
+   margin-top: 30px;
+    animation-direction: alternate;
+    animation: mymove1 5s linear 1s;
+    animation-fill-mode: backwards;
+    position: absolute;  
+    animation-iteration-count: infinite;
+}
+@keyframes mymove1{
+    from{right: 70px;}
+    to{right:1400px;}
+}
+
+.start{
+    margin-top: 400px;
+    animation-direction: alternate;
+    animation: mymove2 5s linear 1s;
+     position: absolute;  
+     margin-left: 550px;
+    animation-iteration-count: infinite;
+    
+}
+@keyframes mymove2{
+    50%{transform:scale(1.5)}
+}
+.menue{
+    height: 70px;
+    margin-top: 20pxpx;
+    animation-direction: alternate;
+    animation: mymove2 5s linear 1s;
+     position: absolute;  
+     margin-left: 1px;
+    animation-iteration-count: infinite;
+    
+}
